@@ -6,7 +6,11 @@ App.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 	.when('/list', {
 		templateUrl : "partials/environmentList"
+	})
+	.when('/charts', {
+		templateUrl : "partials/environmentDetails"
 	});
+	
 		/*.when('/items/computers', {
 			templateUrl: 'items/computers',
 			controller : "ItemListController as itemListCtrl",

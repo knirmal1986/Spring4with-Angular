@@ -16,7 +16,12 @@ public class IndexController {
 	  
 	  @RequestMapping(value="/list",method = RequestMethod.GET)
 	    public String getListPage() {
-		    System.out.println("testtt");
+		    System.out.println("list page");
+	        return "EnvironmentDetails";
+	    }
+	  @RequestMapping(value="/charts",method = RequestMethod.GET)
+	    public String getDetailsPage() {
+		    System.out.println("charts page");
 	        return "EnvrionmentChart";
 	    }
 

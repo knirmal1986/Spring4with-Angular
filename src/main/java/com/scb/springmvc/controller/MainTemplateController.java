@@ -13,4 +13,8 @@ public class MainTemplateController {
 	    public String getEnvironmentDetailsList() {
 	    	return "EnvrionmentChart";	
 	    }
+	@RequestMapping(value="/environmentDetails",method = RequestMethod.GET)
+    public String getEnvironmentDetails() {
+    	return "EnvironmentDetails";	
+    }
 }

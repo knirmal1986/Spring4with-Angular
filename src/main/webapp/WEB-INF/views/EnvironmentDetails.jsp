@@ -14,8 +14,8 @@
       <div class="generic-containerr" ng-controller="UserController as ctrl">
           <div class="panel panel-default">
           <ul class="navoption nav navbar-nav navbar-right">
-              	<li><a href="list">List</a></li>
-              	<li><a href="Details">Details</a></li>
+              	<li><a href="list">Details</a></li>
+              	<li><a href="charts">Chart</a></li>
               </ul>
               <div class="panel-heading"><span class="lead">Allocate New Environment </span></div>
               
@@ -143,9 +143,13 @@
       </div>
       
   <script>
-  $(function(){
-	    $("#datepicker").datepicker();
-	});
+    
+  $( function() {
+    $( "#startDate").datepicker({ minDate: 0});
+    $( "#endDate").datepicker({ minDate: 0});
+  } );
+  
+  
   </script>
       
 		
